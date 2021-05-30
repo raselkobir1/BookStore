@@ -1,0 +1,91 @@
+﻿@using Web.BookStore.Models
+@model BookViewModel
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="display-4">Book Details</h3>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/img/book/book1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/img/book/book2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/img/book/book3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>@Model.Title</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-primary">
+                    <span class="label label-primary">By: </span>
+                    <span class="monospaced">@Model.Author</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="description">
+                       @Model.Description
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <a class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">
+                        Read now
+                    </a>
+                </div>
+            </div>
+            <br />
+            <ul class="list-group">
+                <li class="list-group-item"><span class="font-weight-bold">Category - </span> @Model.Category</li>
+                <li class="list-group-item"><span class="font-weight-bold">Total pages - </span> @Model.TotalPages</li>
+                <li class="list-group-item"><span class="font-weight-bold">Language - </span> @Model.Language</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <hr />
+        <h3>Similar Book List:</h3>
+        @for (int i = 0; i < 6; i++)
+        {
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="~/img/default-book.png" alt="Card image" style="width:100%; height: 255px">
+                    <div class="card-body">
+                        <h3 class="card-title">@Model.Title</h3>
+                        <p class="card-text">@Model.Description</p>
+                        <a href="/book/Getbook/@Model.Id" class="btn btn-outline-success">view Details</a>
+                        <small style="margin-left:85px;" class="text-muted">@Model.Author</small>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
