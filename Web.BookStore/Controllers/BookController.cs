@@ -10,19 +10,22 @@ namespace Web.BookStore.Controllers
 {
     public class BookController : Controller
     {
+        //--------Webgentle running tutorials: 27
         private readonly BookRepository _bookRepository = null;
         public BookController()
         {
             _bookRepository = new BookRepository();
         }
-        public List<BookViewModel> GetAllBooks()
+        public ViewResult GetAllBooks()
         {
-            return _bookRepository.GetAllBooks();
+            var bookList = _bookRepository.GetAllBooks();
+            return View(bookList);
         }
 
-        public BookViewModel GetBook(int id)
+        public ViewResult GetBook(int id)
         {
-            return _bookRepository.GetBookById(id);
+            var book = _bookRepository.GetBookById(id);
+            return View(book);
         }
 
         public List<BookViewModel> SearchtBooks(string title, string authorName)
