@@ -14,20 +14,13 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "I:\RnD\BookStoreApp\Web.BookStore\Views\_ViewImports.cshtml"
-using Web.BookStore;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 2 "I:\RnD\BookStoreApp\Web.BookStore\Views\_ViewImports.cshtml"
 using Web.BookStore.Models;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"94e17605c950fb75d54da0937b83c6f506084066", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"62124c76f7819cc37a9a0586c9dcb17de964e04a", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

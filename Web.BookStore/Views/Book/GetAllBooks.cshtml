@@ -1,22 +1,31 @@
-﻿@using Web.BookStore.Models
-@model IEnumerable<BookViewModel> 
+﻿@model IEnumerable<BookViewModel>
+@{
+    ViewData["Title"] = "All Book";
+}
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="~/img/default-book.png" alt="Card image" style="width:100%; height: 255px">
+                    <div class="card-body">
+                        <h3 class="card-title">@item.Title</h3>
+                        <p class="card-text">@item.Description</p>
+                        @*<a asp-controller="book" asp-action="Getbook" asp-route-id="@item.Id" asp-fragment="similarBooks"
+                               class="btn btn-outline-success">view Details
+                            </a>*@
 
-    <div class="container">
-        <div class="row">
-            @foreach (var item in Model)
-            {
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="~/img/default-book.png" alt="Card image" style="width:100%; height: 255px">
-                        <div class="card-body">
-                            <h3 class="card-title">@item.Title</h3>
-                            <p class="card-text">@item.Description</p>
-                            <a href="/book/Getbook/@item.Id" class="btn btn-outline-success">view Details</a>
-                            <small style="margin-left:85px;" class="text-muted">@item.Author</small>
-                        </div>
+                        <a asp-route="bookDetails" asp-route-id="@item.Id" asp-fragment="similarBooks"
+                           class="btn btn-outline-success">
+                            view Details
+                        </a>
+
+                        <small style="margin-left:85px;" class="text-muted">@item.Author</small>
                     </div>
                 </div>
-            }
+            </div>
+        }
 
-        </div>
     </div>
+</div>
