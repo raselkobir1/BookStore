@@ -14,20 +14,13 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "I:\RnD\BookStoreApp\Web.BookStore\Views\_ViewImports.cshtml"
-using Web.BookStore;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 2 "I:\RnD\BookStoreApp\Web.BookStore\Views\_ViewImports.cshtml"
 using Web.BookStore.Models;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dab32ba605978d1348ba0a9d39a673b85bbf92ce", @"/Views/Shared/_LoginInfo.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"94e17605c950fb75d54da0937b83c6f506084066", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"62124c76f7819cc37a9a0586c9dcb17de964e04a", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__LoginInfo : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-outline-primary"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -62,7 +55,7 @@ using Web.BookStore.Models;
             WriteLiteral("\r\n");
             WriteLiteral("\r\n\r\n");
             WriteLiteral("    <li class=\"nav-item\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dab32ba605978d1348ba0a9d39a673b85bbf92ce4776", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dab32ba605978d1348ba0a9d39a673b85bbf92ce4614", async() => {
                 WriteLiteral("Login");
             }
             );
@@ -96,7 +89,7 @@ using Web.BookStore.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dab32ba605978d1348ba0a9d39a673b85bbf92ce7304", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dab32ba605978d1348ba0a9d39a673b85bbf92ce7142", async() => {
                 WriteLiteral("Register");
             }
             );

@@ -4,15 +4,19 @@
 <section class="jumbotron text-center">
     <div class="container">
         <h1>Welcome to Book Store</h1>
-        <p class="lead text-muted">
-            What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.
-        </p>
         <input type="text" id="searchBox" name="BookSearch" class="form-control" placeholder="Search by book name" />
         <p>
             <a href="#" class="btn btn-primary my-2">Search books</a>
         </p>
         <!-- Display the countdown timer in an element -->
         <h2 id="countDown"></h2>
+
+        <environment include="Development">
+            <h4>Development mode</h4>
+        </environment>
+        <environment exclude="Development">
+            <h4>If mode if not development then in this section render</h4>
+        </environment>
     </div>
 </section>
 
